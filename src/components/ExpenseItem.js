@@ -1,12 +1,12 @@
 import "./ExpenseItem.css";
-
-function ExpenseItem() {
+// here where I passed the word props as an argument, since this is our own function we can name this argument whatever we want. Typically it is named props
+function ExpenseItem(props) {
   return (
     <div className="expense-item">
-      <div>March 28th 2021</div>
+      <div>{props.date.toDateString()}</div>
       <div className="expense-item__description">
-        <h2>Car Insurance</h2>
-        <div className="expense-item__price">$294.67</div>
+        <h2>{props.title}</h2>
+        <div className="expense-item__price">${props.amount}</div>
       </div>
     </div>
   );
