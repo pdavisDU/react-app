@@ -3,7 +3,7 @@ import "./Expenses.css";
 
 function Expenses(props) {
   return (
-    <div>
+    <div className="expenses">
       {/* Here where we have the words title and amount, we can choose whatever words we want for that on the outside of the brackets */}
       <ExpenseItem
         title={props.items[0].title}
