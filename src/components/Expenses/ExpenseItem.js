@@ -1,5 +1,5 @@
 import ExpenseDate from "./ExpenseDate";
-import Card from "./Card";
+import Card from "../UI/Card";
 import "./ExpenseItem.css";
 // here where I passed the word props as an argument, since this is our own function we can name this argument whatever we want. Typically it is named props
 function ExpenseItem(props) {
